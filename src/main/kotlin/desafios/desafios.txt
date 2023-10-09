@@ -1,8 +1,5 @@
 Nível Básico:
 
-7. Faça um programa que verifique se um número é primo.
-8. Implemente um programa que imprima os números de 1 a 100.
-9. Crie um programa que calcule o maior valor entre três números.
 10. Faça um programa que conte quantas vogais existem em uma string.
 11. Calcule a média de uma lista de números.
 Faça um programa que leia uma lista de nomes e os ordene em ordem alfabética.
