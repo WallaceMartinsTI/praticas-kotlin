@@ -1,6 +1,5 @@
 Nível Básico:
 
-Faça um programa que calcule a área e o perímetro de um retângulo.
 Escreva um programa que valide se uma senha atende a critérios de segurança (pelo menos 8 caracteres, números e letras maiúsculas).
 Crie um programa que encontre o maior valor em uma matriz.
 Implemente um programa que gere uma série de Fibonacci até um determinado termo.
