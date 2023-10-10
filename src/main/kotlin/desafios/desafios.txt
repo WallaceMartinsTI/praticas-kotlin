@@ -1,22 +1,12 @@
 Nível Básico:
 
-10. Faça um programa que conte quantas vogais existem em uma string.
-11. Calcule a média de uma lista de números.
-Faça um programa que leia uma lista de nomes e os ordene em ordem alfabética.
-Implemente um programa que verifique se uma string é um palíndromo.
-Escreva um programa que calcule a sequência de números primos até um limite dado.
-Crie um programa que conte quantas palavras existem em um texto.
-Implemente um programa que converta um número decimal para binário.
 Faça um programa que calcule a área e o perímetro de um retângulo.
 Escreva um programa que valide se uma senha atende a critérios de segurança (pelo menos 8 caracteres, números e letras maiúsculas).
 Crie um programa que encontre o maior valor em uma matriz.
 Implemente um programa que gere uma série de Fibonacci até um determinado termo.
-Nível Intermediário:
 
 INTERMEDIARIO
 
-Faça um programa que simule um jogo de adivinhação.
-Crie um programa que implemente uma pilha (stack) em Kotlin.
 Implemente um programa que resolva um quebra-cabeça de Sudoku.
 Escreva um programa que faça a validação de um número de cartão de crédito usando o algoritmo de Luhn.
 Faça um programa que leia um arquivo XML e extraia informações dele.
@@ -32,20 +22,4 @@ Faça um programa que encontre todos os anagramas de uma palavra.
 Implemente um programa que realize a validação de um endereço de e-mail.
 Crie um programa que implemente um sistema de chat em tempo real usando sockets.
 Implemente um programa que leia um arquivo JSON e converta-o em objetos Kotlin.
-Escreva um programa que resolva o problema das Torres de Hanói.
 Faça um programa que implemente um sistema de controle de estoque.
-Implemente um programa que simule o comportamento de um autômato celular.
-Nível Avançado:
-
-AVANÇADO
-
-Crie um programa que desenvolva um sistema de recomendação baseado em aprendizado de máquina.
-Implemente um programa que resolva o problema do caixeiro viajante (Travelling Salesman Problem).
-Escreva um programa que realize a compactação e descompactação de arquivos em formato ZIP.
-Faça um programa que simule um ambiente de simulação de tráfego rodoviário.
-Implemente um programa que crie uma API RESTful em Kotlin.
-Crie um programa que implemente um motor de busca de texto em um grande conjunto de documentos.
-Implemente um programa que realize a análise léxica e sintática de uma linguagem de programação simples.
-Escreva um programa que implemente um sistema de recomendação de filmes com filtragem colaborativa.
-Faça um programa que crie e renderize gráficos 3D.
-Implemente um programa que realize a detecção de objetos em imagens usando redes neurais convolucionais.
