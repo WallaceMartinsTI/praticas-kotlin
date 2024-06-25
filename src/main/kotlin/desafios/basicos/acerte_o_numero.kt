@@ -18,7 +18,6 @@ fun main() {
         e.printStackTrace()
         println("VALOR INVÁLIDO")
     }
-  
 }
 
 fun getRandomNumber(): Int {
