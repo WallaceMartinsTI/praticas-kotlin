@@ -1,7 +1,7 @@
 package desafios.basicos
 
 fun main() {
-  val letra = 'J'
+  val letra = 'a'
   val palavra = "CARRO"
   
   if(letraNaPalavra(letra, palavra)) {
