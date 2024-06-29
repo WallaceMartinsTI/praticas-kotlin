@@ -1,5 +1,7 @@
 package com.wcsm.desafiosjava.basicos;
 
+import com.wcsm.desafiosjava.utils.FormatDecimalPlaces;
+
 import java.text.DecimalFormat;
 
 /*
@@ -71,7 +73,7 @@ class FiltroPessoas1 {
             }
         }
 
-        return formatDecimalPlaces(alturas / qtdHomens);
+        return FormatDecimalPlaces.formatDecimalPlaces(alturas / qtdHomens);
     }
 
     private int quantidadeMulheres(double[][] pessoas) {
@@ -84,10 +86,6 @@ class FiltroPessoas1 {
         return qtdMulheres;
     }
 
-    private double formatDecimalPlaces(Double value) {
-        DecimalFormat df = new DecimalFormat("#.##");
-        String result = df.format(value);
-        return Double.parseDouble(result);
-    }
+
 
 }

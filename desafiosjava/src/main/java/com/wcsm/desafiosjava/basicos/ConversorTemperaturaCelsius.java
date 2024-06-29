@@ -1,5 +1,7 @@
 package com.wcsm.desafiosjava.basicos;
 
+import com.wcsm.desafiosjava.utils.FormatDecimalPlaces;
+
 import java.text.DecimalFormat;
 
 /*
@@ -23,13 +25,13 @@ class ConversorTemperaturaCelsius {
         System.out.println("=========================================================");
         System.out.println("Convertendo a temperatura " + celsiusTemp + " °C (graus Celsius)");
         System.out.println("=========================================================");
-        System.out.println("Para KELVIN: " + conversor.formatDecimalPlaces(kelvinTemp) + " K");
+        System.out.println("Para KELVIN: " + FormatDecimalPlaces.formatDecimalPlaces(kelvinTemp) + " K");
         System.out.println("---------------------------------------------------------");
-        System.out.println("Para REAUMUR: " + conversor.formatDecimalPlaces(reaumurTemp) + " °Re");
+        System.out.println("Para REAUMUR: " + FormatDecimalPlaces.formatDecimalPlaces(reaumurTemp) + " °Re");
         System.out.println("---------------------------------------------------------");
-        System.out.println("Para RANKINE: " + conversor.formatDecimalPlaces(rankineTemp) + " °Ra");
+        System.out.println("Para RANKINE: " + FormatDecimalPlaces.formatDecimalPlaces(rankineTemp) + " °Ra");
         System.out.println("---------------------------------------------------------");
-        System.out.println("Para FAHRENHEIT: " + conversor.formatDecimalPlaces(fahrenheitTemp) + "°F");
+        System.out.println("Para FAHRENHEIT: " + FormatDecimalPlaces.formatDecimalPlaces(fahrenheitTemp) + "°F");
         System.out.println("=========================================================");
 
     }
@@ -53,11 +55,6 @@ class ConversorTemperaturaCelsius {
         // F = C * 1.8 + 32
         return celsius * 1.8 + 32;
     };
-
-    private String formatDecimalPlaces(Double value) {
-        DecimalFormat df = new DecimalFormat("#.##");
-        return df.format(value);
-    }
 
 };
 
