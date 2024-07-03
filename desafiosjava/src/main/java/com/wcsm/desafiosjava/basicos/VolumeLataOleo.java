@@ -2,7 +2,7 @@ package com.wcsm.desafiosjava.basicos;
 
 import com.wcsm.desafiosjava.utils.FormatDecimalPlaces;
 
-public class VolumeLataOleo {
+class VolumeLataOleo {
 
     public static void main(String[] args) {
 
