@@ -69,7 +69,6 @@ class FolhaDePagamento {
         } catch (Exception e) {
             System.out.println("Você informou algum valor inválido. Use o ponto para separar casas decimais \" . \" formato: 25.78.");
         }
-
     }
 
 }
