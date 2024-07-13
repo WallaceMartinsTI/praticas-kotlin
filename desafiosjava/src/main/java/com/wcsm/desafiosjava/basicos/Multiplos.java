@@ -51,6 +51,7 @@ class Multiplos {
         } catch (Exception e) {
             System.out.println("Valores inválidos, tente novamente.");
         }
+        sc.close();
     }
 
 }

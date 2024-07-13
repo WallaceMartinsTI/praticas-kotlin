@@ -90,6 +90,7 @@ class AnaliseDeNumeros {
         } catch (Exception e) {
             System.out.println("Você informou algum valor inválido.");
         }
+        sc.close();
     }
 
 }
