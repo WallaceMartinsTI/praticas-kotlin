@@ -13,14 +13,14 @@ class Palindromo {
       
         String palavra = sc.nextLine().toUpperCase();
 
-        String palavraInversa = "";
+        StringBuilder palavraInversa = new StringBuilder();
         int tamanhoPalavra = palavra.length() - 1;
         for(int x = palavra.length(); x > 0; x--) {
-            palavraInversa += palavra.charAt(tamanhoPalavra);
+            palavraInversa.append(palavra.charAt(tamanhoPalavra));
             tamanhoPalavra--;
         }
         
-        if(palavra.equals(palavraInversa)) {
+        if(palavra.contentEquals(palavraInversa)) {
             System.out.println("A palavra " + palavra + " ao inverso e " + palavraInversa + " logo e PALINDROMO.");
         } else {
             System.out.println("A palavra " + palavra + " ao inverso e " + palavraInversa + " logo NAO e PALINDROMO.");
