@@ -1,6 +1,5 @@
-package com.wcsm.desafiosjava.basicos;
+package com.wcsm.desafiosjava.intermediario;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
