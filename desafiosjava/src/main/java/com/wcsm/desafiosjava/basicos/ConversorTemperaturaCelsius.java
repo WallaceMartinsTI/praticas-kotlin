@@ -1,9 +1,5 @@
 package com.wcsm.desafiosjava.basicos;
 
-import com.wcsm.desafiosjava.utils.FormatDecimalPlaces;
-
-import java.text.DecimalFormat;
-
 /*
 * Escreva um programa que, com base em uma temperatura em graus celsius,
 * a converta e exiba em Kelvin (K), Réaumur (Re), Rankine (Ra) e Fahrenheit (F),
@@ -23,15 +19,15 @@ class ConversorTemperaturaCelsius {
         double fahrenheitTemp = conversor.celsiusToFahrenheit(celsiusTemp);
 
         System.out.println("=========================================================");
-        System.out.println("Convertendo a temperatura " + celsiusTemp + " °C (graus Celsius)");
+        System.out.printf("Convertendo a temperatura %.2f C (graus Celsius)", celsiusTemp);
         System.out.println("=========================================================");
-        System.out.println("Para KELVIN: " + FormatDecimalPlaces.formatDecimalPlaces(kelvinTemp) + " K");
+        System.out.printf("Para KELVIN: %.2f K", kelvinTemp);
         System.out.println("---------------------------------------------------------");
-        System.out.println("Para REAUMUR: " + FormatDecimalPlaces.formatDecimalPlaces(reaumurTemp) + " °Re");
+        System.out.printf("Para REAUMUR: %.2f Re", reaumurTemp);
         System.out.println("---------------------------------------------------------");
-        System.out.println("Para RANKINE: " + FormatDecimalPlaces.formatDecimalPlaces(rankineTemp) + " °Ra");
+        System.out.printf("Para RANKINE: %.2f Ra", rankineTemp);
         System.out.println("---------------------------------------------------------");
-        System.out.println("Para FAHRENHEIT: " + FormatDecimalPlaces.formatDecimalPlaces(fahrenheitTemp) + "°F");
+        System.out.printf("Para FAHRENHEIT: %.2f F", fahrenheitTemp);
         System.out.println("=========================================================");
 
     }

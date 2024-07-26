@@ -1,7 +1,5 @@
 package com.wcsm.desafiosjava.basicos;
 
-import com.wcsm.desafiosjava.utils.FormatDecimalPlaces;
-
 /*
 * Criar um programa que calcule a média de salários de uma empresa,
 * pedindo ao usuário a grade de funcionários e os salários, e devolvendo
@@ -19,8 +17,7 @@ class MediaSalarial {
 
         media = (n1 + n2 + n3 + n4) / 4;
 
-        double result = FormatDecimalPlaces.formatDecimalPlaces(media);
-        System.out.println("A média dos salários é de R$" + result);
+        System.out.printf("A média dos salários é de R$%.2f", media);
     }
 
 }

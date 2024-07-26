@@ -1,7 +1,5 @@
 package com.wcsm.desafiosjava.intermediario;
 
-import com.wcsm.desafiosjava.utils.FormatDecimalPlaces;
-
 import java.util.Scanner;
 
 class ContaBancaria {
@@ -28,7 +26,7 @@ class ContaBancaria {
     }
 
     public double saldo() {
-        return FormatDecimalPlaces.formatDecimalPlaces(saldo);
+        return saldo;
     }
 
 }
@@ -116,10 +114,8 @@ class SistemaBancario {
                         System.out.println("Conta criada com sucesso!");
                         break;
                     case 3:
-                        double saldoAtual = FormatDecimalPlaces.formatDecimalPlaces(
-                                contaBancaria.saldo()
-                        );
-                        System.out.println("Seu saldo atual é de R$" + saldoAtual);
+                        double saldoAtual = contaBancaria.saldo();
+                        System.out.printf("Seu saldo atual é de R$%.2f", saldoAtual);
                         break;
                     case 4:
                         while(true) {
@@ -131,7 +127,7 @@ class SistemaBancario {
                                 String quantiaFormatada = inputQuantiaDeposito.replace(',', '.');
                                 double quantiaDeposito = Double.parseDouble(quantiaFormatada);
                                 contaBancaria.depositar(quantiaDeposito);
-                                System.out.println("A quantia de R$" + FormatDecimalPlaces.formatDecimalPlaces(quantiaDeposito) + " foi adicionada a sua conta!");
+                                System.out.printf("A quantia de R$%.2f foi adicionada a sua conta!", quantiaDeposito);
                                 break;
                             } catch (Exception e) {
                                 System.out.println("Valor inválido, siga o exemplo: R$123,45");
@@ -148,9 +144,9 @@ class SistemaBancario {
                                 String quantiaFormatada = inputQuantiaSaque.replace(',', '.');
                                 double quantiaSaque = Double.parseDouble(quantiaFormatada);
                                 if(contaBancaria.sacar(quantiaSaque)) {
-                                    System.out.println("A quantia de R$" + FormatDecimalPlaces.formatDecimalPlaces(quantiaSaque) + " foi retirada da sua conta!");
+                                    System.out.printf("A quantia de R$%.2f foi retirada da sua conta!", quantiaSaque);
                                 } else {
-                                    System.out.println("Erro ao sacar R$" + FormatDecimalPlaces.formatDecimalPlaces(quantiaSaque) + " saldo insuficiênte.");
+                                    System.out.printf("Erro ao sacar R$%.2f. Saldo insuficiente.", quantiaSaque);
                                 }
                                 break;
                             } catch (Exception e) {

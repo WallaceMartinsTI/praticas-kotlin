@@ -1,7 +1,5 @@
 package com.wcsm.desafiosjava.basicos;
 
-import com.wcsm.desafiosjava.utils.FormatDecimalPlaces;
-
 class AzulejosParede {
 
     public static void main(String[] args) {
@@ -14,7 +12,7 @@ class AzulejosParede {
 
         qtd = (hp * lp) / (ha * la);
 
-        System.out.println("Quantidade de azulejos necessários para cobrir a parede: " + FormatDecimalPlaces.formatDecimalPlaces(qtd));
+        System.out.printf("Quantidade de azulejos necessários para cobrir a parede: %.2f", qtd);
     }
 
 }

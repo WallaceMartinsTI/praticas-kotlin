@@ -1,7 +1,5 @@
 package com.wcsm.desafiosjava.basicos;
 
-import com.wcsm.desafiosjava.utils.FormatDecimalPlaces;
-
 public class CavaloLevantarMassa {
 
     public static void main(String[] args) {
@@ -13,7 +11,7 @@ public class CavaloLevantarMassa {
 
         cavalos = (m * h / t) / 745.6999;
 
-        System.out.println("A quantidade de cavalos necessários é " + FormatDecimalPlaces.formatDecimalPlaces(cavalos));
+        System.out.printf("A quantidade de cavalos necessários é %.2f", cavalos);
 
     }
 

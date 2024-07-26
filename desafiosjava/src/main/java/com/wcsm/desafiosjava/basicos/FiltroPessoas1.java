@@ -1,9 +1,5 @@
 package com.wcsm.desafiosjava.basicos;
 
-import com.wcsm.desafiosjava.utils.FormatDecimalPlaces;
-
-import java.text.DecimalFormat;
-
 /*
 * Tem-se um conjunto de dados contendo a altura e o sexo (masculino, feminino)
 * de 10 pessoas. Fazer um algoritmo que calcule e escreva:
@@ -36,7 +32,7 @@ class FiltroPessoas1 {
         System.out.println("Maior altura do grupo: " + maiorAlturaGrupo);
 
         double mediaAlturaHomens = filtro1.mediaAlturaHomens(pessoas);
-        System.out.println("Media de altura entre Homens: " + mediaAlturaHomens);
+        System.out.printf("Media de altura entre Homens: %.2f", mediaAlturaHomens);
 
         int quantidadeMulheres = filtro1.quantidadeMulheres(pessoas);
         System.out.println("No grupo ha " + quantidadeMulheres + " mulheres.");
@@ -73,7 +69,7 @@ class FiltroPessoas1 {
             }
         }
 
-        return FormatDecimalPlaces.formatDecimalPlaces(alturas / qtdHomens);
+        return alturas / qtdHomens;
     }
 
     private int quantidadeMulheres(double[][] pessoas) {
