@@ -56,14 +56,20 @@ class HotDogs {
         System.out.println("Media dos Cachorro-quentes.");
 
         System.out.print("Quantidade de cachorro-quentes: ");
-        int hotDogs = sc.nextInt();
+        String hotDogsInput = sc.nextLine();
 
         System.out.print("Quantidade de participantes: ");
-        int participantes = sc.nextInt();
+        String participantesInput = sc.nextLine();
 
-        double hotDogsPorParticipantes = ((double) hotDogs / participantes);
+        try {
+            double hotDogs = Double.parseDouble(hotDogsInput);
+            double participantes = Double.parseDouble(participantesInput);
 
-        System.out.printf("Media de cachorro-quentes por participante: %.2f", hotDogsPorParticipantes);
+            double hotDogsPorParticipantes = (hotDogs / participantes);
+            System.out.printf("Media de cachorro-quentes por participante: %.2f", hotDogsPorParticipantes);
+        } catch (Exception e) {
+            System.out.println("Um dos valores digitados esta incorreto.");
+        }
 
         sc.close();
     }
