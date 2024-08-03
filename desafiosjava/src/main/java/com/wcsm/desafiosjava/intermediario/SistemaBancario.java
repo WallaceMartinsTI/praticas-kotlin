@@ -161,6 +161,8 @@ class SistemaBancario {
             }
         }
 
+        scanner.close();
+
     }
 
     private static boolean criarUsuario(String usuario, String senha) {
